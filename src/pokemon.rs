@@ -10,6 +10,15 @@ pub struct Pokemon {
     pub order: u32,
     pub weight: u32,
     pub abilities: Vec<PokemonAbility>,
+    pub forms: Vec<NamedAPIResource>,
+    pub game_indices: Vec<VersionGameIndex>,
+    pub held_items: Vec<PokemonHeldItem>,
+    pub location_area_encounters: String,
+    pub moves: Vec<PokemonMove>,
+    pub species: NamedAPIResource,
+    pub sprites: PokemonSprites,
+    pub stats: Vec<PokemonStat>,
+    pub types: Vec<PokemonType>,
 }
 
 #[derive(Deserialize, Debug)]
